@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Print & Stitch Services</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+      margin: 0;
+      padding: 0;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #111;
+      padding: 10px 0;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 8px 12px;
+      border-radius: 5px;
+    }
+
+    nav a:hover {
+      background-color: #555;
+    }
+
+    section {
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 80px;
+      background: #f2f2f2;
+    }
+
+    section:nth-child(even) {
+      background: #e0e0e0;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    p {
+      max-width: 700px;
+      text-align: center;
+      color: #555;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .gallery img {
+      width: 500px;
+      height: 300px;
+      object-fit: fill;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .contact-info {
+  max-width: 900px; /* was 600px */
+  background: #ffffff;
+  padding: 80px 55px; /* increased padding */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 30px auto;
+  transition: transform 0.3s ease;
+}
+
+.contact-info:hover {
+  transform: translateY(-5px);
+}
+
+.contact-info h3 {
+  font-size: 26px; /* slightly bigger */
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 17px; /* slightly bigger */
+  color: #444;
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+.contact-info a {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 600px) {
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+
+    .ong
+    {
+      text-align: center;
+      font-size: 20px;
+      color: red;
+      margin: 20px 0;
+    }
+
+    span {
+      font-weight: bold;
+      color: #3537cf;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#printing">Printing</a>
+    <a href="#tailoring">Tailoring</a>
+    <a href="#promotion">Promotion</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Printing Services -->
+  <section id="printing">
+    <h2>Printing Services</h2>
+    <p>Professional printing for documents, flyers, posters, business cards, and more.</p>
+    <div class="gallery">
+      <img src="img/businesflyer.avif" alt="Flyer Print">
+      <img src="img/bussinescard.jpg" alt="Business Card">
+      <img src="img/LOL_Poster_S3_FA_Lo.jpg" alt="Poster">
+      <img src="img/poster.avif" alt="Document Print">
+    </div>
+  </section>
+
+  <!-- Tailoring Services -->
+  <section id="tailoring">
+    <h2>Tailoring Services</h2>
+    <p>Custom uniforms, office wear, school outfits, and alterations made to fit you perfectly.</p>
+    <div class="gallery">
+      <img src="img/unig.webp" alt="Uniform">
+      <img src="img/csh.jpg" alt="Casual Shirt">
+      <img src="img/toga.avif" alt="Alteration Work">
+      <img src="img/gown.avif" alt="Gown Tailoring">
+    </div>
+  </section>
+
+  <!-- Promotion Services -->
+  <section id="promotion">
+    <h2>Promotion Services</h2>
+    <p>Marketing support with shirts, tarpaulins, online content, and giveaway items for branding.</p>
+    <div class="ong">This section is currently under development by the developer <span>(Karl)</span>.</div>
+    <div class="gallery">
+      <img src="images/promotion1.jpg" alt="Shirt Design">
+      <img src="images/promotion2.jpg" alt="Promotional Mugs">
+      <img src="images/promotion3.jpg" alt="Tarpaulin">
+      <img src="images/promotion4.jpg" alt="Social Media Ad">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact & Owner Information</h2>
+    <div class="contact-info">
+      <h3>Owned by: Maria fe Trabuco</h3>
+      <p>📞 Phone: 09362487594</p>
+      <p>📧 Email: trabucokirkmarvene99@gmail.com</p>
+      <p>📍 Address: Ramos street, P7, Laligan, Valencia City, Buk...</p>
+      <p>📱 Facebook: <a href="https://www.facebook.com/p/Kirk-Marvene-Trabuco-100009359772312/?_rdr" target="_blank">Kirk Marvene</a></p>
+    </div>
+  </section>
+  <footer style="text-align: center; padding: 20px; background-color: #111; color: rgb(255, 255, 255);">
+    <p>&copy; 2025 Print & Stitch Services. All rights reserved.</p>
+
+</body>
+</html>
